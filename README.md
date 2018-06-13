@@ -2,7 +2,7 @@
 
 ### I know that my teammate will not read this so let me leave super important things at the top
 
-### Please use processed_data.txt that I send to you/that you generate with writeInfo function (check the required file section)
+### Please use processed_data.txt that you WILL generate with writeInfo function (check the required file section)
 
 ## First time to learn
 * change train.py main function's parameter from
@@ -89,12 +89,12 @@ train(arg)
     ```
     sed -n '101, 300p' processed_data.txt > small_train.txt
     ```
-    Otherwise, you use the function (I slightly changed your code for image name) to generate the file from json file by
+    If you don't have this yet, you use the function (I slightly changed your code for image name) to generate the file from json file by
     ```
     from label_resize import resize
     writeInfo("Dataset/annotation.json")
     ```
-    This generate the whole image information (left and right had separately), so if you lost ```processed_data.txt``` that I gave you, please use this.
+    This generate the whole image information (left and right had separately), so if you lost ```processed_data.txt``` that I gave you, please use this. (you need Dataset/annotation.json)
 
 
 
